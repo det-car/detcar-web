@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%; /* white */
-    --foreground: 35.91, 100%, 50.2%; /* orange */
+    --foreground: 35.91 100% 50.2%; /* orange */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
@@ -32,8 +32,8 @@
   }
 
   .dark {
-    --background: 0, 0%, 0%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 0%; /* black */
+    --foreground: 35.91 100% 50.2%; /* orange */
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
@@ -57,12 +57,11 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
