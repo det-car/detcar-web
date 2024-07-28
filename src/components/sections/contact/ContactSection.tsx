@@ -12,7 +12,7 @@ export default function ContactSection() {
           <MapPin className="h-6 w-6 text-zinc-400" />
         </div>
         <ContactCard />
-        <div className="h-[400px] max-w-[550px] w-full">
+        <div className="h-[400px] md:max-w-[550px] w-full">
           <iframe
             src="https://maps.google.com/maps?q=Galluswarte%2C%20Frankfurt%20am%20Main&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near"
             className="border-0 w-full h-full grayscale md:rounded-tr-3xl md:rounded-br-3xl rounded-none border-none"

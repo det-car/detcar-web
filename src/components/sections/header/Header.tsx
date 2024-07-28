@@ -1,4 +1,4 @@
-import { Topbar } from "./Topbar";
+import Topbar from "./Topbar";
 import { HeaderHero } from "./HeaderHero";
 
 const Header: React.FC = () => {
