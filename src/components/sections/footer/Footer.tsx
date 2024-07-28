@@ -2,7 +2,7 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-light py-4 mt-16 border-t-2 border-myColor-orange text-myColor-white">
+    <footer className="bg-dark text-light py-4 border-t-2 border-myColor-orange text-myColor-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Adresse */}
