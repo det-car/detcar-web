@@ -34,29 +34,38 @@ export function ContactPopover() {
                 Telefon
               </Label>
             </div>
-            <p id="telefon" className="text-sm text-gray-300">
+            <p
+              id="telefon"
+              className="text-sm text-gray-300 border-b-2 border-myColor-orange"
+            >
               +49 123 456 789
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5 text-white" />
-              <Label className="text-white" htmlFor="email">
+              <Label className="text-white " htmlFor="email">
                 Email
               </Label>
             </div>
-            <p id="email" className="text-sm text-gray-300">
+            <p
+              id="email"
+              className="text-sm text-gray-300 border-b-2 border-myColor-orange"
+            >
               contact@info.de
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
               <MapPin className="h-5 w-5 text-white" />
-              <Label className="text-white" htmlFor="location">
+              <Label className="text-white " htmlFor="location">
                 Location
               </Label>
             </div>
-            <p id="location" className="text-sm text-gray-300">
+            <p
+              id="location"
+              className="text-sm text-gray-300 border-b-2 border-myColor-orange"
+            >
               1234 Straße, Stadt, Land
             </p>
           </div>

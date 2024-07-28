@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: hsl(var(--background));
+  background-color: black;
 }
 
 body.dark {
