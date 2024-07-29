@@ -1,6 +1,6 @@
 import ContactPopover from "./ContactPopover";
 
-export const HeaderHero: React.FC = () => {
+const Hero: React.FC = () => {
   return (
     <div className="relative w-full h-[500px]">
       <img
@@ -20,4 +20,4 @@ export const HeaderHero: React.FC = () => {
   );
 };
 
-export default HeaderHero;
+export default Hero;
