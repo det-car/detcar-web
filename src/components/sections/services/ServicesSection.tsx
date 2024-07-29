@@ -18,7 +18,7 @@ export default function PflegeSection() {
       <h1 className="text-2xl font-bold text-center text-myColor-white p-4 border-b-2 border-myColor-orange mt-6">
         Dienstleistungen
       </h1>
-      <div className="md:w-[500px] w-full h-[400px] m-6 flex justify-center items-start">
+      <div className="md:w-[525px] w-full h-[400px] m-6 flex justify-center items-start">
         {selectedSize ? (
           <ServiceCard
             title={servicesData[selectedSize].title}

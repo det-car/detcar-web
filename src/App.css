@@ -17,6 +17,8 @@
 }
 
 body {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  background: url('assets/images/memphis-pattern.webp') repeat;
   background-color: black !important;
   font-family: 'Garet', sans-serif;
 }

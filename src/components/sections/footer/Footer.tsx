@@ -2,9 +2,9 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] text-light py-4 border-t-2 border-myColor-orange text-myColor-white">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <footer className="bg-none text-light pt-4 border-t-2 border-myColor-orange text-myColor-white">
+      <div className="mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
           {/* Adresse */}
           <div>
             <h5 className="text-lg font-semibold mb-2 border-b-[0.5px] border-myColor-orange">
@@ -47,14 +47,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col justify-between items-center mt-6">
+        <div className="flex md:flex-row flex-col justify-between items-center border-myColor-white py-4">
           {/* Copyright */}
-          <p className="text-center md:text-left">
+          <p className="text-center md:text-left ml-6">
             &copy; {new Date().getFullYear()} Det-Car. Alle Rechte vorbehalten.
           </p>
 
           {/* Links */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mr-6">
             <a
               href="/datenschutz"
               className="text-light border-b-[1px] hover:border-primary-green"

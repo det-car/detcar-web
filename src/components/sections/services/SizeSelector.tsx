@@ -9,9 +9,9 @@ interface SizeSelectorProps {
 
 const SizeSelector: React.FC<SizeSelectorProps> = ({ onSizeSelect }) => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center gap-12 border-2 border-myColor-gray rounded-3xl bg-zinc-900">
-      <h1 className="text-2xl font-bold text-myColor-white text-center">
-        Select the size of your vehicle:
+    <div className="w-full h-full flex flex-col items-center justify-center gap-12 border-2 border-myColor-gray rounded-3xl bg-myColor-black">
+      <h1 className="text-2xl font-medium text-myColor-white text-center">
+        Wählen Sie die Größe Ihres Fahrzeugs:
       </h1>
       <div className="flex items-center justify-center gap-12">
         <SizeTooltip

@@ -31,8 +31,8 @@ const IconButtonWithTooltip: React.FC<IconButtonWithTooltipProps> = ({
             {icon}
           </Button>
         </TooltipTrigger>
-        <TooltipContent className="!bg-black">
-          <p className="!bg-black !text-white text-lg">{tooltipText}</p>
+        <TooltipContent className="!bg-myColor-gray">
+          <p className="!bg-myColor-gray !text-white text-lg">{tooltipText}</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
