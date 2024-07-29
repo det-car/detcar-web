@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 import {
   Sheet,
   SheetClose,
@@ -7,6 +6,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function SheetNav() {
   return (
@@ -23,20 +23,30 @@ export function SheetNav() {
       <SheetContent className="!bg-myColor-black border-l-2">
         <nav className="flex flex-col items-center space-y-8 p-4 mt-12">
           <SheetClose asChild>
-            <a className="text-myColor-white hover:text-myColor-orange text-lg">
+            <Link
+              to="/"
+              className="text-myColor-white hover:text-myColor-orange text-lg"
+            >
               Home
-            </a>
+            </Link>
           </SheetClose>
-          <a className="text-myColor-white hover:text-myColor-orange text-lg">
-            Kontakt
-          </a>
-          <a className="text-myColor-white hover:text-myColor-orange text-lg">
-            Service
-          </a>
+          <SheetClose asChild>
+            <Link
+              to="/kontakt"
+              className="text-myColor-white hover:text-myColor-orange text-lg"
+            >
+              Kontakt
+            </Link>
+          </SheetClose>
+          <SheetClose asChild>
+            <Link
+              to="/gallery"
+              className="text-myColor-white hover:text-myColor-orange text-lg"
+            >
+              Gallery
+            </Link>
+          </SheetClose>
         </nav>
-        {/*         <SheetClose asChild>
-          <Button type="submit">Save changes</Button>
-        </SheetClose> */}
       </SheetContent>
     </Sheet>
   );

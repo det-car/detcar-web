@@ -1,10 +1,11 @@
 import ContactPopover from "./ContactPopover";
+import heroBackground from "./../../../assets/images/temp-bg.jpg";
 
 const Hero: React.FC = () => {
   return (
     <div className="relative w-full h-[500px]">
       <img
-        src="temp-bg.jpg"
+        src={heroBackground}
         alt=""
         className="absolute inset-0 w-full h-full object-cover brightness-60"
       />
