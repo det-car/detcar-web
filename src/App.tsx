@@ -1,5 +1,5 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom"; // GitHub pages can't handle server-side routing
-/* import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; */ // Use this for server-side routing
+/* import { HashRouter as Router, Routes, Route } from "react-router-dom"; */ // GitHub pages can't handle server-side routing
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Use this for server-side routing
 import Topbar from "./components/sections/topbar/Topbar";
 import Hero from "./components/sections/hero/Hero";
 import ServicesSection from "./components/sections/services/ServicesSection";
