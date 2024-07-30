@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    ::selection {
+      @apply bg-myColor-orange text-myColor-black;
+    }
+  
+    ::-moz-selection {
+      @apply bg-myColor-orange text-myColor-black;
+    }
+
+    ::marker {
+        @apply text-myColor-orange;
+    }
+  }

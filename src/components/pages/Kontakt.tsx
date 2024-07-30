@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const Kontakt: React.FC = () => {
   return (
     <div>
-      <div className="h-[36vh] bg-[#1a1a1a] flex items-end justify-start">
+      <div className="h-[36vh] flex items-end justify-start">
         <h1 className="text-5xl text-myColor-orange font-bold text-center pt-20 ml-24 mb-12">
           Kontakt
         </h1>

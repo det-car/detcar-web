@@ -36,10 +36,10 @@ interface CarSelectorProps {
 const CarSelector: React.FC<CarSelectorProps> = ({ onSelect, value }) => {
   return (
     <Select onValueChange={onSelect} value={value}>
-      <SelectTrigger className="w-[120px] md:w-[150px] !border-2 !border-myColor-white font-bold">
+      <SelectTrigger className="w-[120px] !border-[1px] !border-[#414241] font-bold md:w-[150px]">
         <SelectValue placeholder="Select car size" />
       </SelectTrigger>
-      <SelectContent className="!bg-myColor-black !border-2 !border-myColor-gray hover:!bg-black">
+      <SelectContent className="!border-2 !border-myColor-gray !bg-myColor-black hover:!bg-black">
         <SelectItemComponent value="klein" Icon={Car} label="Klein" />
         <SelectItemComponent value="mittel" Icon={Bus} label="Mittel" />
         <SelectItemComponent value="gross" Icon={Truck} label="Groß" />

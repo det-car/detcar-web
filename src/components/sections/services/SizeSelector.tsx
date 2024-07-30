@@ -16,21 +16,21 @@ const SizeSelector: React.FC<SizeSelectorProps> = ({ onSizeSelect }) => {
       <div className="flex items-center justify-center gap-12">
         <SizeTooltip
           icon={
-            <Car className="h-12 w-12 text-myColor-white hover:text-myColor-orange" />
+            <Car className="h-12 w-12 text-myColor-white hover:text-myColor-orange opacity-85" />
           }
           tooltipText="Klein"
           onClick={() => onSizeSelect("klein")}
         />
         <SizeTooltip
           icon={
-            <Bus className="h-12 w-12 text-myColor-white hover:text-myColor-orange" />
+            <Bus className="h-12 w-12 text-myColor-white hover:text-myColor-orange opacity-85" />
           }
           tooltipText="Mittel"
           onClick={() => onSizeSelect("mittel")}
         />
         <SizeTooltip
           icon={
-            <Truck className="h-12 w-12 text-myColor-white hover:text-myColor-orange" />
+            <Truck className="h-12 w-12 text-myColor-white hover:text-myColor-orange opacity-85" />
           }
           tooltipText="Groß"
           onClick={() => onSizeSelect("gross")}

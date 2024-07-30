@@ -25,7 +25,7 @@ const IconButtonWithTooltip: React.FC<IconButtonWithTooltipProps> = ({
           <Button
             variant="ghost"
             size="icon"
-            className="hover:!bg-myColor-black hover:!text-myColor-orange w-10 h-10 md:w-16 md:h-16 border-none"
+            className="!bg-zinc-900 hover:!text-myColor-orange w-12 h-12 md:w-16 md:h-16 border-none"
             onClick={onClick}
           >
             {icon}
