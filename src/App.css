@@ -17,12 +17,18 @@
 }
 
 body {
-  /* background: linear-gradient(135deg, #1a1a1a, #333); */
   background: url('assets/patterns/dark_leather.webp') repeat;
   background-color: black !important;
+  background-size: 325px 325px;
   font-family: 'Garet', sans-serif;
 }
 
 body.dark {
   background-color: hsl(var(--background));
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 200px 200px;
+  }
 }
