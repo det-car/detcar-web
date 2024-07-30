@@ -7,6 +7,7 @@ import ContactSection from "./components/sections/contact/ContactSection";
 import Footer from "./components/sections/footer/Footer";
 import Kontakt from "./components/pages/Kontakt";
 import ScrollUp from "./components/ScrollUp";
+import Loader from "./components/Loader";
 
 import "./App.css";
 
@@ -33,6 +34,8 @@ function App() {
         <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
 
+      {/* Loader will be displayed on all pages */}
+      <Loader />
       {/* Scroll up button */}
       <ScrollUp />
       {/* Footer will be displayed on all pages */}
