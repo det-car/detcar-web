@@ -1,12 +1,8 @@
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+
+import NavLinkBtn from "./NavLinkBtn";
 
 export function SheetNav() {
   return (
@@ -20,32 +16,11 @@ export function SheetNav() {
           <Menu className="h-9 w-9 text-myColor-white hover:cursor-pointer" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="!bg-myColor-black border-l-2">
-        <nav className="flex flex-col items-center space-y-8 p-4 mt-12">
-          <SheetClose asChild>
-            <Link
-              to="/"
-              className="text-myColor-white hover:text-myColor-orange text-lg"
-            >
-              Home
-            </Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link
-              to="/kontakt"
-              className="text-myColor-white hover:text-myColor-orange text-lg"
-            >
-              Kontakt
-            </Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link
-              to="/gallery"
-              className="text-myColor-white hover:text-myColor-orange text-lg"
-            >
-              Gallery
-            </Link>
-          </SheetClose>
+      <SheetContent className="border-l-2 !bg-myColor-black">
+        <nav className="mt-12 flex flex-col items-center space-y-8 p-4">
+          <NavLinkBtn to="/" text="Home" />
+          <NavLinkBtn to="/kontakt" text="Kontakt" />
+          <NavLinkBtn to="/gallery" text="Gallery" />
         </nav>
       </SheetContent>
     </Sheet>

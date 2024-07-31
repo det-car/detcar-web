@@ -7,7 +7,7 @@ const Loader = () => {
   useEffect(() => {
     const loader = document.getElementById("loader");
     const body = document.body;
-    const minimumLoadingTime = 1500;
+    const minimumLoadingTime = 1500; // Minimum loading time in milliseconds
     const start = performance.now();
 
     const handleLoad = () => {
