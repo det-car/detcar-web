@@ -18,9 +18,9 @@ const Loader = () => {
         () => {
           if (loader) {
             loader.classList.add("fade-out");
+            body.classList.remove("overflow-hidden");
             setTimeout(() => {
               setLoading(false);
-              body.classList.remove("overflow-hidden");
             }, 1000); // Duration of the fade-out animation
           }
         },
