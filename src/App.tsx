@@ -27,15 +27,22 @@ function App() {
               <Hero />
               <ServicesSection />
               <ContactSection />
+              <Loader />
             </>
           }
         />
         {/* Kontakt page */}
-        <Route path="/kontakt" element={<Kontakt />} />
+        <Route
+          path="/kontakt"
+          element={
+            <>
+              <Kontakt />
+              <Loader />
+            </>
+          }
+        />
       </Routes>
 
-      {/* Loader will be displayed on all pages */}
-      <Loader />
       {/* Scroll up button */}
       <ScrollUp />
       {/* Footer will be displayed on all pages */}

@@ -7,7 +7,7 @@ const Loader = () => {
   useEffect(() => {
     const loader = document.getElementById("loader");
     const body = document.body;
-    const minimumLoadingTime = 1500; // Minimum loading time in milliseconds
+    const minimumLoadingTime = 500; // Minimum loading time in milliseconds
     const start = performance.now();
 
     const handleLoad = () => {
@@ -21,7 +21,7 @@ const Loader = () => {
             body.classList.remove("overflow-hidden");
             setTimeout(() => {
               setLoading(false);
-            }, 1000); // Duration of the fade-out animation
+            }, 500); // Duration of the fade-out animation
           }
         },
         remainingTime > 0 ? remainingTime : 0,

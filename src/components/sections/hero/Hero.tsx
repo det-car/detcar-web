@@ -4,16 +4,16 @@ import "./Hero.css";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative w-full h-[55vh] hero-shadow">
+    <div className="hero-shadow relative h-[55vh] w-full">
       <img
         src={heroBackground}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover "
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Thesis</h1>
-        <p className="text-lg md:text-2xl mb-24">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center text-white">
+        <h1 className="mb-4 text-4xl font-bold md:text-6xl">Thesis</h1>
+        <p className="mb-24 text-lg md:text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <ContactPopover />

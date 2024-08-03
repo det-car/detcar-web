@@ -16,7 +16,7 @@ export function SheetNav() {
           <Menu className="h-9 w-9 text-myColor-white hover:cursor-pointer" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="border-l-2 !bg-myColor-black">
+      <SheetContent className="z-50 border-l-2 !bg-myColor-black">
         <nav className="mt-12 flex flex-col items-center space-y-8 p-4">
           <NavLinkBtn to="/" text="Home" />
           <NavLinkBtn to="/kontakt" text="Kontakt" />
