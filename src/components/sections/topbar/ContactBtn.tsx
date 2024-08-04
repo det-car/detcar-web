@@ -21,7 +21,7 @@ export const ContactBtn: React.FC<ContactBtnProps> = ({ scrolled }) => {
         scrolled
           ? "!bg-myColor-orange !text-myColor-black"
           : "!bg-myColor-black !text-myColor-white"
-      } hover:!bg-myColor-orange hover:!text-myColor-black text-lg font-semibold p-4 !border-myColor-gray border-2`}
+      } border-2 !border-myColor-gray p-2 text-sm font-semibold hover:!bg-myColor-orange hover:!text-myColor-black md:p-4 md:text-lg`}
     >
       Kontakt
     </Button>
