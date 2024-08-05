@@ -4,16 +4,16 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const Kontakt: React.FC = () => {
   return (
     <div>
-      <div className="h-[36vh] flex items-end justify-start">
-        <h1 className="text-5xl text-myColor-orange font-bold text-center pt-20 ml-24 mb-12">
+      <div className="flex h-[36vh] items-end justify-start">
+        <h1 className="mb-12 ml-8 pt-20 text-center text-5xl font-bold text-myColor-orange md:ml-24">
           Kontakt
         </h1>
       </div>
-      <div className="bg-myColor-white p-20">
-        <div className="grid md:grid-cols-2 gap-2">
+      <div className="bg-myColor-white p-4 md:p-20">
+        <div className="grid gap-2 md:grid-cols-2">
           {/* Contact Information */}
           <div>
-            <h1 className="text-3xl font-semibold mb-12">Det-Car.de</h1>
+            <h1 className="mb-12 text-3xl font-semibold">Det-Car.de</h1>
             <div className="space-y-8">
               <div className="flex items-center space-x-2">
                 <Phone className="text-myColor-black" size={30} />
@@ -45,7 +45,7 @@ const Kontakt: React.FC = () => {
           <div className="h-[400px] md:h-auto">
             <iframe
               src="https://maps.google.com/maps?q=Galluswarte%2C%20Frankfurt%20am%20Main&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near"
-              className="border-0 w-full h-full grayscale md:rounded-tr-3xl md:rounded-br-3xl rounded-none"
+              className="h-full w-full rounded-none border-0 grayscale md:rounded-br-3xl md:rounded-tr-3xl"
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
