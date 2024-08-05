@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <h1 className="mb-4 mt-36 text-3xl font-bold md:text-4xl">
           Perfektion im Detail
         </h1>
-        <p className="mb-24 max-w-[800px] text-lg md:text-2xl">
+        <p className="mb-12 max-w-[800px] text-lg md:mb-24 md:text-2xl">
           Ihr Auto verdient nur das Beste. Wir sind spezialisiert darauf, das
           Beste aus Ihrem Fahrzeug herauszuholen und es in neuem Glanz
           erstrahlen zu lassen.
