@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SheetNav } from "./SheetNav";
 import { ContactBtn } from "./ContactBtn";
+import logo from "./../../../assets/images/logo-cropped.svg";
 
 const Topbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,11 +23,7 @@ const Topbar: React.FC = () => {
         {/*         <CarFront className="h-9 w-9 mr-2 text-myColor-orange" />
         <span className="text-lg font-semibold italic">Det-Car.de</span> */}
         <a href="/">
-          <img
-            src="./../../../src/assets/images/logo-cropped.svg"
-            alt=""
-            className="max-h-[3.5rem]"
-          />
+          <img src={logo} alt="" className="max-h-[3.5rem]" />
         </a>
       </div>
       <div className="flex items-center space-x-4">

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import logo from "./../../../assets/images/logo-cropped.svg";
 
 import NavLinkBtn from "./NavLinkBtn";
 
@@ -22,7 +23,7 @@ export function SheetNav() {
           <NavLinkBtn to="/kontakt" text="Kontakt" />
           <NavLinkBtn to="/gallery" text="Gallery" />
         </nav>
-        <img src="./../../../src/assets/images/logo-cropped.svg" alt="" />
+        <img src={logo} alt="Logo" />
       </SheetContent>
     </Sheet>
   );
