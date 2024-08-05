@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { CarFront } from "lucide-react";
 import { SheetNav } from "./SheetNav";
 import { ContactBtn } from "./ContactBtn";
 
@@ -18,10 +17,17 @@ const Topbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 w-full h-[4rem] /* bg-[#1a1a1a] */  bg-[rgba(37,37,37,0.9)] border-b-2 border-myColor-gray flex items-center justify-between px-4 z-50">
+    <div className="/* */ fixed top-0 z-50 flex h-[4rem] w-full items-center justify-between border-b-2 border-myColor-gray bg-[#1a1a1a] bg-[rgba(0,0,0,1)] pr-4">
       <div className="flex items-center text-myColor-white">
-        <CarFront className="h-9 w-9 mr-2 text-myColor-orange" />
-        <span className="text-lg font-semibold italic">Det-Car.de</span>
+        {/*         <CarFront className="h-9 w-9 mr-2 text-myColor-orange" />
+        <span className="text-lg font-semibold italic">Det-Car.de</span> */}
+        <a href="/">
+          <img
+            src="./../../../src/assets/images/logo-cropped.svg"
+            alt=""
+            className="max-h-[3.5rem]"
+          />
+        </a>
       </div>
       <div className="flex items-center space-x-4">
         <ContactBtn scrolled={scrolled} />
