@@ -23,7 +23,7 @@ const Topbar: React.FC = () => {
         {/*         <CarFront className="h-9 w-9 mr-2 text-myColor-orange" />
         <span className="text-lg font-semibold italic">Det-Car.de</span> */}
         <a href="/">
-          <img src={logo} alt="" className="max-h-[3.5rem]" />
+          <img src={logo} alt="Logo" className="max-h-[2rem] md:max-h-[3rem]" />
         </a>
       </div>
       <div className="flex items-center space-x-4">
