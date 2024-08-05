@@ -2,12 +2,12 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-none text-light pt-4 border-t-2 border-myColor-orange text-myColor-white">
+    <footer className="text-light border-t-2 border-myColor-orange bg-none pt-4 text-myColor-white">
       <div className="mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
+        <div className="grid grid-cols-1 gap-6 px-6 md:grid-cols-2">
           {/* Adresse */}
           <div>
-            <h5 className="text-lg font-semibold mb-2 border-b-[0.5px] border-myColor-orange">
+            <h5 className="mb-2 border-b-[0.5px] border-myColor-orange text-lg font-semibold">
               Adresse
             </h5>
             <p>
@@ -21,12 +21,12 @@ export default function Footer() {
 
           {/* Kontakt */}
           <div>
-            <h5 className="text-lg font-semibold mb-2 border-b-[0.5px] border-myColor-orange">
+            <h5 className="mb-2 border-b-[0.5px] border-myColor-orange text-lg font-semibold">
               Kontakt
             </h5>
             <div className="flex flex-col space-y-2">
               <div className="flex items-center">
-                <Mail className="mr-2 min-w-6 min-h-6" />
+                <Mail className="mr-2 min-h-6 min-w-6" />
                 <a
                   href="mailto:info@detcar.de"
                   className="text-light border-b-[1px] hover:border-myColor-orange"
@@ -35,7 +35,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center">
-                <Phone className="mr-2 min-w-6 min-h-6" />
+                <Phone className="mr-2 min-h-6 min-w-6" />
                 <a
                   href="tel:+4912345678"
                   className="text-light border-b-[1px] hover:border-myColor-orange"
@@ -47,29 +47,29 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col justify-between items-center border-myColor-white py-4">
+        <div className="flex flex-col items-center justify-between border-myColor-white py-4 md:flex-row">
           {/* Copyright */}
-          <p className="text-center md:text-left ml-6">
+          <p className="ml-6 text-center md:text-left">
             &copy; {new Date().getFullYear()} Det-Car. Alle Rechte vorbehalten.
           </p>
 
           {/* Links */}
-          <div className="flex space-x-4 mr-6">
+          <div className="mr-6 flex space-x-4">
             <a
               href="/datenschutz"
-              className="text-light border-b-[1px] hover:border-primary-green"
+              className="text-light border-b-[1px] transition-colors duration-150 hover:border-myColor-orange"
             >
               Datenschutz
             </a>
             <a
               href="/impressum"
-              className="text-light border-b-[1px] hover:border-primary-green"
+              className="text-light border-b-[1px] transition-colors duration-150 hover:border-myColor-orange"
             >
               Impressum
             </a>
             <a
               href="/agb"
-              className="text-light border-b-[1px] hover:border-primary-green"
+              className="text-light border-b-[1px] transition-colors duration-150 hover:border-myColor-orange"
             >
               AGB
             </a>
