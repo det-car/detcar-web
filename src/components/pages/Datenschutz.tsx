@@ -9,7 +9,7 @@ import "./Datenschutz.css";
 
 const Datenschutz = () => {
   return (
-    <div className="flex flex-col justify-start p-5 !pt-20 font-medium text-myColor-lightGray md:p-10">
+    <div className="mb-24 flex flex-col justify-start p-5 !pt-20 font-medium text-myColor-lightGray md:p-10">
       <h1 className="text-xl font-bold text-myColor-orange md:text-3xl">
         Datenschutzerklärung
       </h1>
