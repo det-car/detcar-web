@@ -4,6 +4,7 @@ import Topbar from "./components/sections/topbar/Topbar";
 import Hero from "./components/sections/hero/Hero";
 import ServicesSection from "./components/sections/services/ServicesSection";
 import ContactSection from "./components/sections/contact/ContactSection";
+import Configurator from "./components/sections/configurator/Configurator";
 import Footer from "./components/sections/footer/Footer";
 import Kontakt from "./components/pages/Kontakt";
 import Datenschutz from "./components/pages/Datenschutz";
@@ -33,6 +34,7 @@ function App() {
                   {/* Main page components */}
                   <Hero />
                   <ServicesSection />
+                  <Configurator />
                   <ContactSection />
                   <Loader />
                 </>

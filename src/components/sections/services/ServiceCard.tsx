@@ -26,8 +26,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   onSelectSize,
 }) => {
   return (
-    <Card className="w-full max-w-md !bg-black !text-myColor-white shadow-lg rounded-lg overflow-hidden border-4 !border-myColor-gray relative">
-      <div className="absolute top-4 right-4">
+    <Card className="relative w-full max-w-md overflow-hidden rounded-3xl border-4 !border-myColor-gray !bg-black !text-myColor-white shadow-lg">
+      <div className="absolute right-4 top-4">
         <CarSelector onSelect={onSelectSize} value={selectedSize} />
       </div>
       <CardHeader className="bg-myColor-gray p-4">
@@ -39,15 +39,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </CardDescription>
       </CardHeader>
       <CardContent className="p-4">
-        <ul className="list-disc pl-5 space-y-2">
+        <ul className="list-disc space-y-2 pl-5">
           {services.map((service, index) => (
-            <li key={index} className="!text-myColor-white py-2">
+            <li key={index} className="py-2 !text-myColor-white">
               {service}
             </li>
           ))}
         </ul>
       </CardContent>
-      <CardFooter className="p-4 border-t !border-myColor-gray text-center">
+      <CardFooter className="border-t !border-myColor-gray p-4 text-center">
         <span className="text-xl font-semibold !text-myColor-white">
           {price}
         </span>

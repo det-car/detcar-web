@@ -22,7 +22,7 @@ module.exports = {
           orange: "#ff9901",
           black: "#000000",
           white: "#ffffff",
-          gray: "#18181b",
+          gray: "#2f2f31",
           lightGray: "#d3d3d3",
         },
       },
