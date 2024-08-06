@@ -70,7 +70,7 @@ const ServiceConfigurator: React.FC = () => {
 
   return (
     <div className="m-20 mx-auto max-w-2xl px-4 py-4">
-      <div className="rounded-3xl border-8 border-myColor-gray">
+      <div className="overflow-hidden rounded-3xl border-8 border-myColor-gray">
         <Table>
           <TableHeader>
             <TableRow className="border-none">
@@ -82,7 +82,7 @@ const ServiceConfigurator: React.FC = () => {
               </TableHead>
             </TableRow>
           </TableHeader>
-          <TableBody>
+          <TableBody className="bg-myColor-black">
             {services.length > 0 ? (
               services.map((service) => (
                 <TableRow
@@ -119,7 +119,7 @@ const ServiceConfigurator: React.FC = () => {
         </Table>
 
         {/* Calculate Button and Total Price Display */}
-        <div className="flex h-20 items-center justify-start border-t-[0.5px] border-myColor-orange py-4">
+        <div className="flex h-20 items-center justify-start border-t-[0.5px] border-myColor-orange bg-myColor-black py-4">
           {showTotalPrice ? (
             <div className="ml-8 text-lg font-bold text-myColor-white">
               Gesamtpreis:{" "}
