@@ -103,7 +103,7 @@ const ServiceConfigurator: React.FC = () => {
                       />
                     </div>
                   </TableCell>
-                  <TableCell className="px-4 py-2 text-lg text-myColor-white">
+                  <TableCell className="select-none px-4 py-2 text-lg text-myColor-white">
                     {service.name}
                   </TableCell>
                 </TableRow>
