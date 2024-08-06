@@ -87,10 +87,14 @@ const ServiceConfigurator: React.FC = () => {
               services.map((service) => (
                 <TableRow
                   key={service.id}
-                  className="!border-myColor-gray hover:!bg-zinc-800"
+                  className="cursor-pointer !border-myColor-gray hover:!bg-zinc-800" // Added cursor-pointer for visual feedback
+                  onClick={() => handleCheckboxChange(service.id)} // Added onClick handler
                 >
                   <TableCell className="px-4 py-2 text-center">
-                    <div className="flex items-center justify-center space-x-2">
+                    <div
+                      className="flex items-center justify-center space-x-2"
+                      onClick={(e) => e.stopPropagation()} // Prevent event propagation to avoid double toggle
+                    >
                       <Checkbox
                         className="h-5 w-5"
                         id={service.id}

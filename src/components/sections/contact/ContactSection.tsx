@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section className="mt-24 w-full text-myColor-white">
       <div className="flex min-h-[600px] flex-col items-center justify-center md:flex-row">
-        <div className="hidden h-[400px] w-[100px] flex-col items-start justify-center gap-8 rounded-bl-3xl rounded-tl-3xl border-2 border-none bg-[#424242] p-[35px] md:flex">
+        <div className="hidden h-[400px] w-[100px] flex-col items-start justify-center gap-8 rounded-bl-3xl rounded-tl-3xl border-2 border-none bg-myColor-gray p-[35px] md:flex">
           <Phone className="h-6 w-6 cursor-pointer text-zinc-400 hover:text-myColor-orange" />
           <Mail className="h-6 w-6 cursor-pointer text-zinc-400 hover:text-myColor-orange" />
           <MapPin className="h-6 w-6 cursor-pointer text-zinc-400 hover:text-myColor-orange" />
